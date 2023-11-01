@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="/coreline-example-module/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/auth_totp/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/base_import/static/csv/o2m_customers_contacts.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/gamification/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_be/data/account.account.template.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_de_skr03/data/account.account.template.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_de_skr04/data/account.account.template.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_ec/data/res.bank.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_eg/data/account.account.template.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_il/data/account.account.template.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_in/data/l10n_in.port.code.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_lu/data/account.group.template.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_mx/data/account.account.tag.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_mx/data/account.account.template.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_sa/data/account.account.template.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/l10n_se/data/account.account.tag.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/mail/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/mass_mailing/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/mrp/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/partner_autocomplete/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/point_of_sale/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/purchase/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/rating/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/sale/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/stock/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/test_mail_full/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/website_forum/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/website_sale/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/addons/website_slides/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/15_0/odoo/addons/base/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/enterprise_15_0/account_avatax/data/product.avatax.category.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/enterprise_15_0/account_intrastat/data/account.intrastat.code.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/enterprise_15_0/account_online_synchronization/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/enterprise_15_0/hr_referral/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../odoo_versions/enterprise_15_0/sign/security/ir.model.access.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
