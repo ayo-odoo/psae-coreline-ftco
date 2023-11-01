@@ -1,0 +1,30 @@
+<odoo>
+    <template id="index">
+        <html>
+            <head>
+                <title>Coreline Example Module</title>
+                <t t-call-assets="coreline-example-module.assets" t-js="false"/>
+            </head>
+            <body>
+                <div id="app"/>
+
+                <script type="text/javascript">
+var odoo = <t t-out="json.dumps({
+                'csrf_token': request.csrf_token(None),
+                '__session_info__': session_info,
+                'debug': debug,
+            })"/>;
+
+odoo.loadMenusPromise = Promise.resolve();
+odoo.loadTemplatesPromise =
+fetch(`/web/webclient/qweb/${odoo.__session_info__.cache_hashes.qweb}?bundle=web.assets_qweb`).then(doc => doc.text());
+                </script>
+                <t t-call-assets="web.assets_common" t-css="false"/>
+<!--                <t t-call-assets="web.assets_backend_prod_only" t-css="false"/>-->
+                <t t-call-assets="web.assets_backend" t-css="false"/>
+                <t t-call-assets="coreline-example-module.assets" t-css="false"/>
+
+            </body>
+        </html>
+    </template>
+</odoo>
