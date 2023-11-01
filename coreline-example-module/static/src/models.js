@@ -27,3 +27,26 @@ models.Order = models.Order.extend({
         this.trigger("change", this);
     }
 });
+
+const _orderline_super = models.Orderline.prototype;
+models.Orderline = models.Orderline.extend({
+    initialize: function() {
+        this.score = 0;
+
+        return _orderline_super.initialize.apply(this, arguments);
+    },
+    init_from_JSON: function(json) {
+        _orderline_super.init_from_JSON.apply(this, arguments);
+        this.score = json.score || 0;
+    },
+    export_as_JSON: function() {
+        return {
+            ..._orderline_super.export_as_JSON.apply(this, arguments),
+            score: +this.score,
+        }
+    },
+    setScore: function(score) {
+        this.score = score;
+        this.trigger("change", this);
+    }
+});

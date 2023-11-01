@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="SetMyFieldButton" owl="1">
+        <div t-att-class="classes" role="button" t-on-click="onClick">
+            <i class="fa fa-cogs" role="img" aria-label="Set MyField" title="Set MyField"/>
+            <t t-if="currentOrder.myField" t-esc="currentOrder.myField"/>
+            <t t-else="">Set MyField</t>
+        </div>
+    </t>
+
+</templates>

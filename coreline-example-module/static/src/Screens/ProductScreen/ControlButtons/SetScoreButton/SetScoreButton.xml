@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="SetScoreButton" owl="1">
+        <div t-att-class="classes" role="button" t-on-click="onClick">
+            <i class="fa fa-cogs" role="img" aria-label="Set MyField" title="Set MyField"/>
+            Set score
+        </div>
+    </t>
+
+</templates>
