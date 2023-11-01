@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="todo_todo_tree_view" model="ir.ui.view">
+            <field name="name">todo_todo.tree</field>
+            <field name="model">todo.todo</field>
+            <field name="arch" type="xml">
+                <tree string="Todos" editable="top">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="todo_todo_act_window" model="ir.actions.act_window">
+            <field name="name">Todos</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">todo.todo</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <menuitem name="Todos" id="todo_todo_menu" action="todo_todo_act_window"/>
+
+    </data>
+</odoo>

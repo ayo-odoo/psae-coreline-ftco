@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="Input" owl="1">
+        <div>
+            <input t-model="state.todo"/>
+            <button t-on-click="addTodo">Add</button>
+        </div>
+    </t>
+
+    <t t-name="Output" owl="1">
+        <ul>
+            <li t-foreach="state.todos" t-as="item" t-key="item.id" t-esc="item.name"/>
+        </ul>
+    </t>
+
+    <t t-name="App" owl="1">
+        <body>
+            <h1>
+                Hello Odoo Users!
+            </h1>
+            <Input state="state"/>
+            <Output t-ref="output"/>
+        </body>
+    </t>
+
+</templates>
