@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ClientDetailsEdit" t-inherit="point_of_sale.ClientDetailsEdit" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('client-details-left')]/*" position="before">
+            <div class="client-detail">
+                <span class="label">Business Type</span>
+                <select class="detail client-address-states needsclick"
+                        name="business_type_id"
+                        t-on-change="captureChange"
+                >
+                    <option value="">None</option>
+
+                    <t t-foreach="env.pos.businessTypes" t-as="businessType" t-key="businessType.id">
+                        <option t-att-value="businessType.id"
+                                t-att-selected="props.partner.business_type_id and props.partner.business_type_id[0] === businessType.id">
+                            <t t-esc="businessType.name" />
+                        </option>
+                    </t>
+                </select>
+            </div>
+        </xpath>
+    </t>
+
+</templates>
