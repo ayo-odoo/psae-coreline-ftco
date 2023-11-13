@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ClientListScreen" t-inherit="point_of_sale.ClientListScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//table//th[1]" position="after">
+            <th t-if="!env.isMobile">Title</th>
+        </xpath>
+    </t>
+
+</templates>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="OrderLinesReceipt" t-inherit="point_of_sale.OrderLinesReceipt" t-inherit-mode="extension" owl="1">
+        <xpath expr="//t[@t-foreach='receipt.orderlines']" position="inside">
+            <div t-if="line.bundle_id" class="pos-receipt-left-padding">
+                Bundle: <t t-esc="line.bundle_id.name" />
+            </div>
+        </xpath>
+    </t>
+
+</templates>
