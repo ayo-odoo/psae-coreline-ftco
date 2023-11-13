@@ -5,6 +5,8 @@ models.load_fields("product.product", ["my_field"]);
 
 models.load_fields("res.partner", ["business_type_id"]);
 
+models.load_fields("pos.payment.method", ["requires_payment_id"]);
+
 models.load_models([{
     model: "business.type",
     domain: [],
@@ -12,7 +14,7 @@ models.load_models([{
     loaded: function (pos, businessTypes) {
         pos.businessTypes = businessTypes;
         pos.businessTypeById = Object.fromEntries(businessTypes.map(type => [type.id, type]));
-    }
+    },
 }]);
 
 
@@ -59,6 +61,37 @@ models.Orderline = models.Orderline.extend({
     },
     setScore: function (score) {
         this.score = score;
+        this.trigger("change", this);
+    },
+    export_for_printing: function () {
+        return {
+            ..._orderline_super.export_for_printing.apply(this, arguments),
+            score: this.score,
+        }
+    }
+});
+
+const _paymentline_super = models.Paymentline.prototype;
+models.Paymentline = models.Paymentline.extend({
+    initialize: function () {
+        this.delivery_payment_id = "";
+        return _paymentline_super.initialize.apply(this, arguments);
+    },
+    init_from_JSON: function (json) {
+        if (json.delivery_payment_id) {
+            this.delivery_payment_id = json.delivery_payment_id;
+        }
+
+        return _paymentline_super.init_from_JSON.apply(this, arguments);
+    },
+    export_as_JSON: function () {
+        return {
+            ..._paymentline_super.export_as_JSON.apply(this, arguments),
+            delivery_payment_id: this.delivery_payment_id,
+        };
+    },
+    set_delivery_payment_id(dpid) {
+        this.delivery_payment_id = dpid;
         this.trigger("change", this);
     },
 });

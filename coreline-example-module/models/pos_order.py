@@ -13,3 +13,11 @@ class PosOrder(models.Model):
             "my_field": ui_order.get("my_field")
         })
         return res
+
+    @api.model
+    def _payment_fields(self, order, ui_paymentline):
+        res = super(PosOrder, self)._payment_fields(order, ui_paymentline)
+        res.update({
+            "delivery_payment_id": ui_paymentline.get("delivery_payment_id")
+        })
+        return res
