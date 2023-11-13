@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="pos_bundle_view_tree" model="ir.ui.view">
+        <field name="name">pos.bundle.view.tree</field>
+        <field name="model">pos.bundle</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name"/>
+                <field name="product_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="pos_bundle_view_action" model="ir.actions.act_window">
+        <field name="name">pos.bundle.view.action</field>
+        <field name="res_model">pos.bundle</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <p>
+                No Bundles Yet !!!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="root_pos_bundle"
+              action="pos_bundle_view_action"
+              name="POS Bundles"
+              parent="point_of_sale.pos_config_menu_catalog"
+              sequence="1"/>
+</odoo>
