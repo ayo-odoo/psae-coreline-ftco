@@ -9,4 +9,12 @@
        </xpath>
     </t>
 
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        <xpath expr="//t[@t-if='receipt.company.logo']" position="before">
+            <h2 class="pos-receipt-center-align">
+                Order Count So Far: <t t-esc="order_count"/>
+            </h2>
+        </xpath>
+    </t>
+
 </templates>

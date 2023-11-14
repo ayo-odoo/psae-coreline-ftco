@@ -21,3 +21,10 @@ class PosOrder(models.Model):
             "delivery_payment_id": ui_paymentline.get("delivery_payment_id")
         })
         return res
+
+    def _get_fields_for_draft_order(self):
+        res = super(PosOrder, self)._get_fields_for_draft_order()
+
+        return res + [
+           "my_field"
+        ]
