@@ -44,12 +44,12 @@
             "coreline-example-module/static/src/Screens/**/*.js",
         ],
         "web.assets_qweb": [
-            "coreline-example-module/static/src/main.xml",
-            "coreline-example-module/static/src/Screens/**/*.xml",
+            # "coreline-example-module/static/src/main.xml",
+            "coreline-example-module/static/**/*.xml",
 
         ],
         "web.assets_backend": [
-            "coreline-example-module/static/src/widgets/barcode.js",
+            "coreline-example-module/static/src/widgets/**/*.js",
         ]
     }
 }

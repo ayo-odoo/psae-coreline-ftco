@@ -1,0 +1,10 @@
+- Assume that we have a model: business.type
+- res.partner has a m2o relationship with that model
+- businesstype has 2 fields: name, icon. name is a Char field. icon is a selection field.
+- the possible values of icon are font-awesome icon classes
+
+-----------
+
+- Write a field widget that would display the font-awesome icon associated with the fa class that the user selects
+
+

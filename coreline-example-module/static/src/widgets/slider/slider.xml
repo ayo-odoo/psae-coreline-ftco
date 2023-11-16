@@ -1,0 +1,23 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="coreline.slider" owl="1">
+        <div class="d-flex flex-row gap-1">
+            <span t-if="props.options.mode === 'readonly'" t-esc="value"/>
+            <input t-else=""
+                   t-att-value="value"
+                   t-on-change="_handleSliderChange"
+                   type="number"
+                   t-att-min="nodeOptions.min || 0"
+                   t-att-max="nodeOptions.max || 100"
+                   t-att-step="nodeOptions.step || 1"/>
+
+            <input type="range"
+                   class="ml-3"
+                   t-att-value="value"
+                   t-att-disabled="props.options.mode === 'readonly' ? 'disabled' : false"
+                   t-att-min="nodeOptions.min || 0"
+                   t-att-max="nodeOptions.max || 100"
+                   t-att-step="nodeOptions.step || 1"
+                   t-on-change="_handleSliderChange"/>
+        </div>
+    </t>
+</templates>
