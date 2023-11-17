@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension" owl="1">
+        <xpath expr="//ul" position="inside">
+            <li t-if="props.line.bundle">
+                Bundle: <t t-esc="props.line.bundle.name"/>
+            </li>
+        </xpath>
+    </t>
+</templates>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="SelectBundleButton" owl="1">
+        <div class="control-button" role="button" t-on-click="onClick">
+            <i class="fa fa-braille" role="img" aria-label="Select Bundle" title="Select Bundle"/>
+            Select Bundle
+        </div>
+    </t>
+</templates>

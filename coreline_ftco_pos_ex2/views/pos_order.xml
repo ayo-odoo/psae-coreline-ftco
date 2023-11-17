@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="pos_order_form_inherit" model="ir.ui.view">
+            <field name="name">pos_order.form</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='full_product_name']" position="after">
+                    <field name="bundle_id"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
