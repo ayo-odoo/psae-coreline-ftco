@@ -26,7 +26,8 @@
     'data': [
         "security/ir.model.access.csv",
         "views/coreline.xml",
-        "data/business.type.csv"
+        "data/business.type.csv",
+        "views/account_move_views.xml",
     ],
 
     'assets': {
