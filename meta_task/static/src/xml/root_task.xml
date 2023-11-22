@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template"  xml:space="preserve">
+
+     <t t-name="MetaApp" owl="1">
+         <body>
+             <div>
+            <button t-on-click="FetchTasks">Add</button>
+
+            <input id="input-task" t-att-value="''" placeholder="Your Task.."/>
+
+            <div><br/></div>
+
+            <table class="center">
+                <thead style="background-color: #CCCCFF;">
+                    <tr>
+                        <th class="text-left">
+                            <span>Task Title</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="state.tasks" t-as="task" t-key="task">
+                        <div><br/></div>
+                        <tr >
+                            <td class="text-right" style="border: 1px solid black;">
+                                <t t-esc="task"/>
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+        </div>
+         </body>
+    </t>
+</templates>
