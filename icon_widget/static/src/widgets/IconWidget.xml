@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="RootIcon" owl="1">
+
+        <span>
+
+           <select id="select1" t-on-change="_getOption" t-att-disabled="props.options.mode == 'readonly' ? 'disable': false">
+               <option><t t-esc="currentItem()"/></option>
+               <t t-foreach="getItems()" t-as="item" t-key="item">
+                   <option t-att-value="item.id"><t t-esc="item.name"/></option>
+                </t>
+            </select>
+
+            <i t-att-class="currentIcon()" style='font-size:48px;' role="img"/>
+<!-- t-if="state.icon"-->
+        </span>
+
+    </t>
+
+</templates>
