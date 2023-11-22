@@ -1,23 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 <odoo>
 
     <template id="main_template" name="Main Template">
 
         <div id="app"> </div>
 
-        <t t-call-assets="meta_task.meta_assets" />
-
-        <script type="text/javascript">
-            var odoo = <t t-out="json.dumps({
-                'csrf_token': request.csrf_token(None),
-                '__session_info__': session_info,
-                'debug': debug,
-            })"/>;
-
-            odoo.loadMenusPromise = Promise.resolve();
-            odoo.loadTemplatesPromise = fetch(`/web/webclient/qweb/${odoo.__session_info__.cache_hashes.qweb}?bundle=web.assets_qweb`).then(doc => doc.text());
-        </script>
+            <script type="text/javascript">
+var odoo = <t t-out="json.dumps({'csrf': request.csrf_token(None),
+                                 '__session_info__': session_info,
+                                 'debug': debug,
+                    })"/>;
+odoo.loadMenusPromise = Promise.resolve();
+odoo.loadTemplatesPromise =
+fetch(`/web/webclient/qweb/${odoo.__session_info__.cache_hashes.qweb}?bundle=web.assets_qweb`).then(doc => doc.text());
+            </script>
+            <t t-call-assets="web.assets_common" t-css="false"/>
+            <t t-call-assets="web.assets_backend" t-css="false"/>
+            <t t-call-assets="meta_task.meta_assets" t-css="false"/>
 
     </template>
-
 </odoo>

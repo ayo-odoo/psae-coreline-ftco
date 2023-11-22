@@ -14,7 +14,7 @@
     'version': '15.0.0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'web'],
+    'depends': [],
 
     'data': ['security/ir.model.access.csv',
              'views/root_task.xml',
@@ -23,11 +23,13 @@
     'assets': {
 
         'meta_task.meta_assets': [
-            ('include', 'web.assets_common'),
-            ('include', 'web.assets_frontend'),
+            'web/static/src/start.js',
+            'web/static/src/legacy/legacy_setup.js',
             'meta_task/static/src/js/root_task.js',
         ],
 
-            }
-
+        'web.assets_qweb': [
+            'meta_task/static/src/xml/root_task.xml',
+        ]
+    }
 }
