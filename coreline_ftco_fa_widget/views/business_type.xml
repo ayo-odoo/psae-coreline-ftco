@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="business_type_tree_view" model="ir.ui.view">
+            <field name="name">business_type.tree</field>
+            <field name="model">business.type</field>
+            <field name="arch" type="xml">
+                <tree string="Business Type" editable="top">
+                    <field name="name"/>
+                    <field name="icon"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="business_type_act_window" model="ir.actions.act_window">
+            <field name="name">Business Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">business.type</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <menuitem name="Business Types" id="business_type_menu" parent="contacts.res_partner_menu_config" action="business_type_act_window"/>
+
+    </data>
+</odoo>

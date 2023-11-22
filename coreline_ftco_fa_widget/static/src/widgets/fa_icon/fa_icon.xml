@@ -1,0 +1,20 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="coreline.fa_icon" owl="1">
+        <div class="d-flex flex-row gap-1">
+            <span t-if="props.options.mode === 'readonly'"
+                  t-att-class="selectedOption.icon"/>
+            <t t-if="props.options.mode === 'readonly'" t-esc="selectedOption.name"/>
+
+
+            <select t-if="props.options.mode !== 'readonly'" name="selectOptions" id="selectOption"
+                    t-on-change="_handleFaIconChange">
+                <option t-foreach="selectOptions" t-as="selectOption"
+                        t-att-value="selectOption.id"
+                        t-att-selected="selectedOption.id === selectOption.id">
+                    <span t-att-class="selectOption.icon"/>
+                    <t t-esc="selectOption.name"/>
+                </option>
+            </select>
+        </div>
+    </t>
+</templates>
