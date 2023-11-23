@@ -51,6 +51,7 @@
         ],
         "web.assets_backend": [
             "coreline-example-module/static/src/widgets/**/*.js",
+            "coreline-example-module/static/src/client.js",
         ]
     }
 }

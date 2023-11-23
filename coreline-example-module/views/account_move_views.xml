@@ -3,6 +3,10 @@
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
+            <header position="inside">
+                <button name="action_alert" string="Test alert" type="object" class="oe_highlight"/>
+            </header>
+
             <xpath expr="//group/group" position="inside">
                 <field name="my_selection_field" widget="my_selection_field"/>
             </xpath>
