@@ -1,24 +1,55 @@
 <odoo>
     <data>
-<!--
-        <template id="listing">
-          <ul>
-            <li t-foreach="objects" t-as="object">
-              <a t-attf-href="#{ root }/objects/#{ object.id }">
-                <t t-esc="object.display_name"/>
-              </a>
-            </li>
-          </ul>
+        <template id="s_my_snippet" name="coreline">
+            <section class="s_my_snippet" data-snippet="s_my_snippet">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>My Snippet</h1>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-4">
+                                <input name="firstName"/>
+                            </div>
+                            <div class="col-4">
+                                <input name="middleName"/>
+                            </div>
+                            <div class="col-4">
+                                <input name="lastName"/>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <input type="submit"/>
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </template>
-        <template id="object">
-          <h1><t t-esc="object.display_name"/></h1>
-          <dl>
-            <t t-foreach="object._fields" t-as="field">
-              <dt><t t-esc="field"/></dt>
-              <dd><t t-esc="object[field]"/></dd>
-            </t>
-          </dl>
+
+        <template id="snippets" inherit_id="website.snippets">
+            <xpath expr="//t[@t-snippet='website.s_banner']" position="before">
+                <t t-snippet="coreline-example-module.s_my_snippet"
+                   t-thumbnail="/website/static/src/img/snippets_thumbs/s_banner.svg">
+                    <keywords>hero, jumbotron</keywords>
+                </t>
+            </xpath>
         </template>
--->
+
+        <template id="s_my_snippet_options" inherit_id="website.snippet_options">
+            <xpath expr="." position="inside">
+                <div data-js="coreline" data-selector=".s_my_snippet">
+                    <we-select string="Color" data-apply-to=".container">
+                        <we-button data-select-class="container">None</we-button>
+                        <we-button data-select-class="container bg-danger">Red</we-button>
+                        <we-button data-select-class="container bg-info">Blue</we-button>
+                        <we-button data-select-class="container bg-success">Green</we-button>
+                    </we-select>
+                </div>
+            </xpath>
+        </template>
     </data>
 </odoo>

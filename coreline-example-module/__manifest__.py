@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'point_of_sale'],
+    'depends': ['base', 'point_of_sale', 'website'],
 
     # always loaded
     'data': [
@@ -28,6 +28,7 @@
         "views/coreline.xml",
         "data/business.type.csv",
         "views/account_move_views.xml",
+        "views/templates.xml",
     ],
 
     'assets': {
@@ -52,6 +53,9 @@
         "web.assets_backend": [
             "coreline-example-module/static/src/widgets/**/*.js",
             "coreline-example-module/static/src/client.js",
+        ],
+        "web.assets_frontend":[
+            "coreline-example-module/static/src/myWidget.js",
         ]
     }
 }
